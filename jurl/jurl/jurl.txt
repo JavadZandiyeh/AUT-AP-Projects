@@ -1,0 +1,35 @@
+POST
+	FORMDATA	--url http://apapi.haditabatabaei.ir/tests/post/formdata --method post --data "param1=value1&param2=value2"
+	URLENCODED	--url http://apapi.haditabatabaei.ir/tests/post/urlencoded --method post --urlencoded "param1=value1&param2=value2"
+	JSON 		--url http://apapi.haditabatabaei.ir/tests/post/json --method post --json "{firstName:javad,lastName:zandiyeh}"
+
+GET
+	HTML		--url http://apapi.haditabatabaei.ir/tests/get/html 
+	JSON		--url apapi.haditabatabaei.ir/tests/get/json
+	PIC		--url apapi.haditabatabaei.ir/tests/get/buffer/pic
+	FILE		--url http://apapi.haditabatabaei.ir/tests/get/File
+	STATUS		--url http://apapi.haditabatabaei.ir/tests/status/400 -i
+
+PUT
+	URLENCODED	--url apapi.haditabatabaei.ir/tests/put/urlencoded/12 -i --method put --urlencoded "a=b&c=d"
+	JSON		--url apapi.haditabatabaei.ir/tests/put/json/12 --method put --json "{1:2}" -i
+	FORMDATA	--url apapi.haditabatabaei.ir/tests/put/formdata/12 --method put --data "a=b&c=d"
+
+DELETE			
+	--url apapi.haditabatabaei.ir/tests/delete/12 --method delete -i
+
+
+ '--url'             -> url of server you want to send request to
+ '--method' or '-M'  -> setting method for request
+ '--headers' or '-H' -> setting headers for request
+ '-i'                -> showing headers of response
+ '--help' or '-H'    -> show this details
+ '-f'                -> follow redirects
+ '--output' or '-O'  -> save response body
+ '--save' or '-S'    -> save this request
+ '--data' or '-d'    -> form data message body making
+ '--json' or '-j'    -> json message body making
+ '--upload'          -> uploading files
+ 'create'            -> making a new directory
+ 'fire'              -> send multi requests
+ 'list'              -> show list of file
