@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="85.44545454545457" y="1039.0">LibrarySystem</node>
+    <node x="194.5" y="0.0">User</node>
+    <node x="94.0" y="295.0">Borrow</node>
+    <node x="0.0" y="32.0">Book</node>
+    <node x="65.94545454545457" y="610.0">Library</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="Library" target="Borrow">
+      <point x="11.699999999999989" y="-189.5" />
+      <point x="194.64545454545456" y="590.0" />
+      <point x="209.0" y="590.0" />
+      <point x="23.0" y="122.5" />
+    </edge>
+    <edge source="LibrarySystem" target="Library">
+      <point x="-65.0" y="-69.5" />
+      <point x="117.94545454545457" y="1014.0" />
+      <point x="104.94545454545457" y="1014.0" />
+      <point x="-78.0" y="189.5" />
+    </edge>
+    <edge source="Borrow" target="Book">
+      <point x="-23.0" y="-122.5" />
+      <point x="163.0" y="275.0" />
+      <point x="150.3" y="275.0" />
+      <point x="66.80000000000001" y="90.5" />
+    </edge>
+    <edge source="Library" target="Book">
+      <point x="-58.50000000000003" y="-189.5" />
+      <point x="124.44545454545454" y="570.0" />
+      <point x="71.95" y="570.0" />
+      <point x="71.95" y="275.0" />
+      <point x="83.50000000000001" y="275.0" />
+      <point x="1.4210854715202004E-14" y="90.5" />
+    </edge>
+    <edge source="Library" target="User">
+      <point x="58.5" y="-189.5" />
+      <point x="241.44545454545457" y="570.0" />
+      <point x="296.99545454545455" y="570.0" />
+      <point x="296.99545454545455" y="275.0" />
+      <point x="288.5" y="275.0" />
+      <point x="0.0" y="122.5" />
+    </edge>
+    <edge source="Borrow" target="User">
+      <point x="69.0" y="-122.5" />
+      <point x="255.0" y="275.0" />
+      <point x="250.89999999999998" y="275.0" />
+      <point x="-37.60000000000002" y="122.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="191.5" y="589.0" />
+  <SelectedNodes>
+    <node>Book</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
